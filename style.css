@@ -1,0 +1,138 @@
+body {background-color: black;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+/* main box to hold everything */
+
+div#main {position: static;
+        box-sizing: border-box;
+        width: 1000px;
+        height: 900px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);}
+
+/* boxes that go inside of main */
+
+header {position: static;
+    box-sizing: border-box;
+    width: 1000px;
+    height: 150px;
+    background-color: darkblue;
+    background-image: url(header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+nav{position: static;
+    box-sizing: border-box;
+    width: 1000px;
+    height: 60px;
+    padding-top: 5px;
+    background-color: #006599;
+    text-align: center;}
+
+aside#left {position: static;
+    box-sizing: border-box;
+    float: left;
+    width: 200px;
+    height: 650px;
+    background-color: blue;
+    background-image: url(aside_left.jpg);
+    background-size: cover;
+    background-position: center;}
+
+
+article {position: static;
+    box-sizing: border-box;
+    float: left;
+    width: 600px;
+    height: 650px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: auto;
+    background-color: white;}
+
+
+aside#right {position: static;
+    box-sizing: border-box;
+    float: left;
+    width: 200px;
+    height: 650px;
+    background-color: lightblue;
+    background-image: url(aside_left.jpg);
+    background-size: cover;
+    background-position: center;}
+
+footer {position: static;
+    box-sizing: border-box;
+    clear: both;
+    width: 1000px;
+    height: 40px;
+    padding-top: 10px;
+    background-color: #006599;
+    color: white;
+    font-size: 12px;
+    font-family: arial;
+    text-align: center;}
+
+
+/* style for the a tags inside of nav */
+nav a {font-family: sans-serif;
+        font-size: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 10px;
+        /* make each link behave like a div box */
+        display: inline-block;
+        border: 1px solid navy;
+        border-radius: 10px;}
+
+nav a:link {color: white;
+            background-color: black;
+            box-shadow: 4px 4px 0px gray;}
+
+nav a:visited {color: white;
+            background-color: black;
+            box-shadow: 4px 4px 0px gray;}
+
+nav a:hover {color: red;
+            background-color: lightseagreen;
+            box-shadow: 6px 6px 0px navy;
+            transform: translate(-2px, -2px);}
+
+nav a:active {color: orangered;
+            background-color: darkcyan;
+            box-shadow: 0px 0px 0px navy;
+            transform: translate(4px, 4px);}
+
+h1 {color: lightgray;
+    font-family: monospace;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    }
+
+p {color: black;
+    font-family: arial;
+    font-size: 16px;
+    line-height: 22px;}
+
+/* style for regular links on page */
+
+a {}
+
+a:link {color: deepskyblue;}
+
+a:visited {color: deepskyblue;}
+
+a:hover {color: deeppink;
+        text-decoration: none;}
+
+a:active {color: black;
+        text-decoration: underline;}
